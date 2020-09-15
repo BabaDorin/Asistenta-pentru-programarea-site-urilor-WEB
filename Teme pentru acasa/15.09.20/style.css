@@ -1,0 +1,23 @@
+.circle {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.par {
+    background-color: red;
+    color: white;
+}
+
+.impar {
+    background-color: green;
+    color: white;
+}
+
+.col{
+    margin-top: 10px;
+}
