@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p id="test">Sunt un pargraf</p>
+    </div>
+    <button onclick='modifyFont()'>Click</button>
+
+    <script>
+        function modifyFont() {
+            let randomFontSize = Math.random() * 40;
+            let paragraph = document.getElementById("test");
+            paragraph.style.fontSize = randomFontSize + "px";
+            paragraph.style.color = getRandomColor();
+            paragraph.style.fontFamily = "Courier New";
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+
+</html>

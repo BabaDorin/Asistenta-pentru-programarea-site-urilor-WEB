@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+    	<p id="nume">John</p>
+    	<p id="prenume">Doe</p>
+	</div>
+    <button onclick="getNames()">Click</button>
+    <script>
+        function getNames(){
+            console.log("Nume: " + document.getElementById("nume").innerText);
+            console.log("Prenume: " + document.getElementById("prenume").innerText);
+        }
+    </script>
+</body>
+</html>
