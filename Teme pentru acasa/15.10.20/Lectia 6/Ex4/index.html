@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .container{
+            margin-top: 100px;
+        }
+
+        .border{
+            height: 450px;
+        }
+        .square{
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            margin: auto;
+        }
+        .circle{
+            height: 140px;
+            width: 140px;
+            margin: auto;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- d-flex align-items-center d-flex justify-content-center -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 border">
+                    <div class="square d-flex align-items-center d-flex justify-content-center">
+                        <div class="circle bg-dark" id="rosu"></div>
+                    </div>
+                    <div class="square d-flex align-items-center d-flex justify-content-center">
+                        <div class="circle bg-dark" id="galben"></div>
+                    </div>
+                    <div class="square d-flex align-items-center d-flex justify-content-center">
+                        <div class="circle bg-dark" id="verde"></div>
+                    </div>
+            </div>
+            <div class="col-md-6 border">
+                <button class="btn btn-success mt-5 mb-3" id="start">Start</button>
+                <br>
+                <button class="btn btn-danger mb-3" id="stop">Stop</button>
+                <br>
+                <button class="btn btn-warning mb-3" id="pauza">Pauza</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
