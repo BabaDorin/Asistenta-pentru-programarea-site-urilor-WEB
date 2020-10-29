@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4">
+        <form name="admitereForm">
+            <div class="form-row">
+                <div class="col-md-6">
+                    <label for="specialitatea">Alegeti specialitatea</label>
+                    <br>
+                    <select name="specialitatea" id="specialitatea" class="form-control">
+                        <option value="-">Alegeti Specialitatea</option>
+                        <option value="PAPP">Programarea si analiza produselor program</option>
+                        <option value="AAW">Administrarea aplicatiilor WEB</option>
+                        <option value="ETE">Educatie Timpurie</option>
+                        <option value="IP">Invatamant Primar</option>
+                    </select>
+                    <br>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+            
+            <div id="formFields" hidden>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label for="li">LIMBA DE INSTUIRE</label>
+                        <input name='li' type="number" class="form-control">
+                        <br>
+                        <label for="matematica">MATEMATICA</label>
+                        <input name='matematica' type="number" class="form-control">
+                        <br>
+                        <label for="media">Media notelor la examenele de absolvire</label>
+                        <input name='media' type="number" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ls">LIMBA STRAINA</label>
+                        <input name="ls" type="number" class="form-control">
+                        <br>
+                        <label for="auxInput" id="auxLabel"></label>
+                        <input name="auxInput" id="auxInput" type="number" class="form-control">
+                    </div>
+                </div>
+                                    
+                <br>
+                <button class="btn btn-info" type="button" id="btSubmit">Calculeaza</button>
+                <br>
+                <input type="text" disabled=true class="form-control" id="result">
+            </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
