@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     sum = document.getElementById("sum");
 
     btCalculeaza.addEventListener('click', ()=>{
-        let number = parseInt(input.value);
+        let number = number(input.value);
+        alert(input.value);
         let suma = 0;
         while(number != 0){
             suma += number % 10;
