@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="bg-info">
+    <div class="container d-flex align-items-center d-flex justify-content-center">
+        <div class="card text-center align-middle">
+
+            <div class="card-header">
+                Completati formularul pentru a vedea ce amenda vi se cuvine
+            </div>
+
+            <div class="card-body">
+                <form name="form" onsubmit="return false">
+                    <label for="viteza">Viteza (Km/h)</label>
+                    <input type="number" name="viteza" class="form-control" min="0">
+                    <br>
+                    <select id="locatie" name="locatie" class="form-control">
+                        <option value="localitate">In localitate</option>
+                        <option value="inAfaraLocalitatii">In afara localitatii</option>
+                        <option value="autostrada">Pe autostrada</option>
+                    </select>
+                    <br>
+                    <button class="btn btn-primary" name="btDetermina">Determina</button>
+                </form>
+            </div>
+
+            <div class="card-footer">
+                <p id="punishment"></p>
+                <img id="media" src="">
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

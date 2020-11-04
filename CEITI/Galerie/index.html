@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Galerie de imagini</h2>
+        <form onsubmit="return false" name="inputForm">
+            <h5>Incarca una sau mai multe fotografii</h5>
+            <input class="m-3" type="file" name="fileInput" accept="image/*" id="inputUploadImage" class="form-control" multiple>
+            <br>
+            <button class="btn btn-primary" name="btAdd">Add</button>
+            <br>
+        </form>
+        <div class="owl-carousel owl-theme" id="carousel">
+        </div>
+
+        <div class="mt-3">
+            <img src="images/noimg.png" alt="" class="big-image">
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
