@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert(screen.width)">Latimea</button>
+    <button onclick="alert(screen.height)">Inaltimea</button>
+    <button onclick="scrollThatDiv()">Scroll</button>
+    <div id="divus" style="background-color:  black; height: 1400px;"></div>
+    <button onclick="alert('Derulare curenta: ' + window.pageYOffset)">Derulare curenta</button>
+    <div style="height: 2000px;"></div>
+
+    <script>
+        function scrollThatDiv(){
+            alert(document.getElementById("divus"));
+            var scrolledHeight = document.getElementById("divus").scrollHeight;
+            alert(scrolledHeight);
+            window.scrollBy(0, scrolledHeight);
+        }
+    </script>
+
+
+</body>
+</html>
